@@ -51,7 +51,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ id, name, amount }) => {
     };
 
     return (
-        <div className="border border-gray-300 p-4 mb-4">
+        <article className="border border-gray-300 border-dashed rounded-full p-4 mb-4">
             <div className="grid grid-cols-12 gap-4 items-center">
                 {isEditing ? (
                     <>
@@ -111,7 +111,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ id, name, amount }) => {
                     </>
                 )}
             </div>
-        </div>
+        </article>
     );
 };
 
